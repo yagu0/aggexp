@@ -1,0 +1,39 @@
+Package: aggexp
+Title: aggexp : AGGregation of EXPerts to forecast time-series
+Version: 0.2-3
+Description: As the title suggests, past predictions of a set of given experts
+    are aggregated until time t to predict at time t+1, (generally) as a weighted
+    sum of values at time t. Several weights optimization algorithm are compared:
+    exponential weights, MLPoly, and some classical statistical learning procedures
+    (Ridge, SVM...).
+Author: Benjamin Auder <Benjamin.Auder@math.u-psud.fr> [aut,cre],
+    Jean-Michel Poggi <Jean-Michel.Poggi@parisdescartes.fr> [ctb],
+    Bruno Portier <Bruno.Portier@insa-rouen.fr>, [ctb]
+Maintainer: Benjamin Auder <Benjamin.Auder@math.u-psud.fr>
+Depends:
+    R (>= 3.0)
+Suggests:
+    gam,
+    tree,
+    kernlab
+LazyData: yes
+URL: http://git.auder.net/?p=aggexp.git
+License: MIT + file LICENSE
+Collate:
+    'A_NAMESPACE.R'
+    'z_util.R'
+    'b_Algorithm.R'
+    'b_LinearAlgorithm.R'
+    'd_dataset.R'
+    'm_ExponentialWeights.R'
+    'm_GeneralizedAdditive.R'
+    'm_KnearestNeighbors.R'
+    'm_MLPoly.R'
+    'm_RegressionTree.R'
+    'm_RidgeRegression.R'
+    'm_SVMclassif.R'
+    'z_getData.R'
+    'z_runAlgorithm.R'
+    'z_plotHelper.R'
+    'z_plot.R'
+RoxygenNote: 5.0.1

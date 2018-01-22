@@ -1,0 +1,10 @@
+.RData
+!/pkg/data/*.RData
+.Rhistory
+.ipynb_checkpoints/
+*.so
+*.o
+*.swp
+*~
+/pkg/man/*
+!/pkg/man/aggexp-package.Rd
